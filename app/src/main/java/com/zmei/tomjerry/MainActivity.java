@@ -12,6 +12,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ImageView imageTom = findViewById(R.id.imageTom);
+
+        imageTom.animate().translationYBy(100).setDuration(3000);
+
     }
 public void eraseTom(View view){
     ImageView imageTom = findViewById(R.id.imageTom);
